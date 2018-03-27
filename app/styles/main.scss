@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Quark-Light';
+  src: url('../fonts/Quark-Light.otf');
+}
+
+@font-face {
+  font-family: 'Quark-Bold';
+  src: url('../fonts/Quark-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Aquawax-Black';
+  src: url('../fonts/Aquawax-Black.ttf');
+}
+
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -100,7 +115,7 @@ $icon-font-path: '../fonts/';
   }
 
   #sec-1{
-    min-height: 100vh;
+    min-height: 68vh;
     #bg{
       min-height: inherit;
       background-image: url(../images/ogrupo.png);
@@ -109,4 +124,69 @@ $icon-font-path: '../fonts/';
       background-position: top left;
     }
   }
+
+  #sec-2{
+    min-height: 50vh;    
+    background-image: url(../images/agendabg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top left;
+  }
+  
+  #sec-3{
+    min-height: 50vh;    
+    #esquerda{
+      min-height: inherit;
+      background-color: #00438a;
+    }
+    #direita{
+      min-height: inherit;
+      background-color: #004c8e;
+    }
+  }
+
+  #sec-4{
+    min-height: 50vh;
+    .cont{
+      padding: 0 180px;
+      margin: 0;
+      h3{
+        color: #5d5d5d;
+        text-transform: uppercase;
+        font-family: 'Aquawax-Black';
+        margin: 30px 0;
+      }
+      #degrade{
+        padding: 26px 30px 12px 30px;
+        color: white;
+        font-family: 'Quark-Light';
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-size: 1.4em;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00efd4+0,0f77a3+31,0777a2+45,ffffff+72 */
+        background: #00efd4; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #00efd4 0%, #0f77a3 31%, #0777a2 45%, #ffffff 72%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #00efd4 0%,#0f77a3 31%,#0777a2 45%,#ffffff 72%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #00efd4 0%,#0f77a3 31%,#0777a2 45%,#ffffff 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00efd4', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+      #form-wrapper{
+        margin: 30px 0;
+        .col-md-12, .col-md-6 {padding-left: 0;}
+        .btn, .form-control{
+          border-radius: 0;
+        }
+        .form-group{
+          font-family: 'Quark-Light';
+          letter-spacing: 1px;
+        }
+        
+      }
+    }
+    
+  }
+  #sec-5{
+    min-height: 50vh;
+  }
+
 }
