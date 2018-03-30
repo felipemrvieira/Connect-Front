@@ -26,6 +26,9 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+.row{
+  margin: 0;
+}
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -149,11 +152,73 @@ $icon-font-path: '../fonts/';
   }
 
   #sec-2{
-    min-height: 50vh;    
+    min-height: 50vh;  
     background-image: url(../images/agendabg.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top left;
+    padding: 21px 180px 58px 180px;
+
+    h2{
+      @include titulos;
+    }
+    .cartao-container{
+      margin-bottom: 24px;
+      padding: 0 24px 0 0; 
+      .cartao{
+        border-radius: 0;
+        .cartao-heading{
+          border-radius: 0;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Quark-Light';
+          color: white;
+          padding: 16px;
+          margin-bottom: 5px; 
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00f0d5+0,0087a8+41,00428a+100 */
+          background: #00f0d5; /* Old browsers */
+          background: -moz-linear-gradient(45deg, #00f0d5 0%, #0087a8 41%, #00428a 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, #00f0d5 0%,#0087a8 41%,#00428a 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, #00f0d5 0%,#0087a8 41%,#00428a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0d5', endColorstr='#00428a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          #dia{
+            font-family: 'Quark-Light';
+            font-weight: 900;
+            font-size: 58px;
+            line-height: 100%;
+            margin: 0;
+          }
+          #mes{
+            font-size: 12px;
+            line-height: 100%;
+            margin: 0;
+            letter-spacing: 5px;
+          }
+        }
+        .cartao-body{
+          border-radius: 0;
+          padding: 16px;
+          border: 1px solid transparent;
+          -moz-border-image: -moz-linear-gradient(top, #00f0d5 0%, #00428a 100%);
+          -webkit-border-image: -webkit-linear-gradient(top, #00f0d5 0%, #00428a 100%);
+          border-image: linear-gradient(to bottom, #00f0d5 0%, #00428a 100%);
+          border-image-slice: 1;
+          p{
+            font-family: 'Quark-Light';
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #5d5d5d;
+            margin: 0;
+            
+          }
+        }
+      }
+      
+    }
+
+    
   }
   
   #sec-3{
