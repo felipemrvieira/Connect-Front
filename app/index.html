@@ -97,8 +97,8 @@
       </div>
 
 
-      <section id="sec-1">
-        <div class="col-md-6">
+      <section class="row" id="sec-1">
+        <div id="cont" class="col-md-6">
           <h2>O GRUPO CONNECT</h2>
           <p>O GRUPO CONNECT é uma empresa que encontra na inovação a oportunidade de construir, propagar e animar o 
             espírito e a imaginação para dias melhores de sua família e de todas as pessoas que verdadeiramente se 
@@ -132,15 +132,15 @@
             <form action="">
               <div class="form-group col-md-12">
                 <label for="email">Nome:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                <input type="email" class="form-control" id="nome" placeholder="Enter email" name="email">
               </div>
               <div class="form-group col-md-6">
                 <label for="pwd">Email:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" id="email" placeholder="Enter password" name="pwd">
               </div>
               <div class="form-group col-md-6">
                 <label for="pwd">Telefone:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <input type="password" class="form-control" id="telefone" placeholder="Enter password" name="pwd">
               </div>
               <div class="form-group col-md-12">
                   <label for="comment">Comment:</label>
@@ -154,8 +154,25 @@
         </div>
       </section>
       <section id="sec-5">
-          <div id="esquerda" class="col-md-5">aqui</div>
-          <div id="direita" class="col-md-7">mapa</div>
+        <div class="cont row">
+          <h3>Contato</h3>
+          <div id="esquerda" class="col-md-5">
+            <div class="enderecos">
+              <p>Rua do Livramento, 90 - Centro</p>
+              <p>Maceió, Alagoas - CEP: 57020-030</p>
+            </div>
+            <div class="contatos">
+              <p id="telefone">82 3027-1025</p>
+              <p id="email">contato@grupoconnect.com.br</p>
+              <p id="site">www.grupoconnect.com.br</p>
+            </div>
+            
+          </div>
+          <div id="direita" class="col-md-7">
+            <div id="mapa"></div>
+          </div>
+        </div>
+          
       </section>
       
     </div>
@@ -195,5 +212,19 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+          var mapCanvas = document.getElementById("mapa");
+          var mapOptions = {center: myCenter, zoom: 5};
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+        </script>
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVBWNSCCnINEXymRKehXwkkAcgwExT88&callback=myMap"></script>
+        <!--
+      
   </body>
 </html>

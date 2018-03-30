@@ -13,6 +13,14 @@
   src: url('../fonts/Aquawax-Black.ttf');
 }
 
+@mixin titulos{
+  color: #5d5d5d;
+  text-transform: uppercase;
+  font-family: 'Aquawax-Black';
+  font-size: 24px;
+  margin: 30px 0;
+}
+
 $icon-font-path: '../fonts/';
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -116,11 +124,26 @@ $icon-font-path: '../fonts/';
 
   #sec-1{
     min-height: 68vh;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    #cont{
+      padding: 21px 90px 21px 180px;
+      h2{
+        @include titulos;
+      }
+      p{
+        line-height: 200%;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 20px;
+      }
+    }
+    
     #bg{
       min-height: inherit;
       background-image: url(../images/ogrupo.png);
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-size: cover;
       background-position: top left;
     }
   }
@@ -147,6 +170,10 @@ $icon-font-path: '../fonts/';
 
   #sec-4{
     min-height: 50vh;
+    padding-bottom: 21px;
+    -webkit-box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
+    -moz-box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
+    box-shadow: 0px 6px 8px -4px rgba(0, 0, 0, 0.015);
     .cont{
       padding: 0 180px;
       margin: 0;
@@ -187,6 +214,43 @@ $icon-font-path: '../fonts/';
   }
   #sec-5{
     min-height: 50vh;
+    padding: 21px 0; 
+    .cont{
+      padding: 0 180px;
+      margin: 0;
+      h3{
+        color: #5d5d5d;
+        text-transform: uppercase;
+        font-family: 'Aquawax-Black';
+        margin: 30px 0;
+      }
+      #esquerda{
+        .contatos{
+          #telefone{
+            background: url(../images/telefone.png) center left no-repeat;
+            background-size: auto 95%;
+          padding-left: 32px;
+          }
+          #email{
+            background: url(../images/email.png) center left no-repeat;
+            background-size: auto 95%;
+            padding-left: 32px;
+          }
+          #site{
+            background: url(../images/site.png) center left no-repeat;
+            background-size: auto 95%;
+            padding-left: 32px;
+          }
+          
+          
+        }
+      }
+      #direita{
+        #mapa{
+          height: 500px;
+        }
+      }
+    }
   }
 
 }
