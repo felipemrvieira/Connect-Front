@@ -222,14 +222,64 @@ $icon-font-path: '../fonts/';
   }
   
   #sec-3{
+    display: flex;
+    flex-direction: row;
     min-height: 50vh;    
+    color: white;
     #esquerda{
+      padding: 21px 21px 40px 180px;
       min-height: inherit;
       background-color: #00438a;
+      h2{
+        @include titulos;
+        color: white;
+      }
+      #negocio-desc{
+        padding: 4px;
+        background: linear-gradient(to right, #00f0d5 ,#00428a);
+        border-radius: 8px;
+        p{
+          font-family: Arial, Helvetica, sans-serif;
+          letter-spacing: 1px;
+          background: #00438a;
+          display: block;
+          padding: 24px;
+          border-radius: 6px;
+          margin: 0;
+        }
+      }
+      
+      #baixe{
+        font-size: 24px;
+        text-transform: uppercase;
+        font-family: 'Aquawax-Black';
+        background: url(../images/baixe.png) center left no-repeat;
+        background-size: auto 100%;
+        padding-left: 50px;
+        margin: 30px 0 0 25px;
+        
+      }
     }
     #direita{
       min-height: inherit;
+      padding: 45px 180px 45px 50px;
       background-color: #004c8e;
+      p{
+        letter-spacing: 1px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      .area-atuacao{
+        .area-titulo{
+          color: #00ecd3;
+          margin: 0;
+        }
+        .area-desc{
+          letter-spacing: 1px;
+          margin-bottom: 24px;
+        }
+      }
     }
   }
 
@@ -294,7 +344,7 @@ $icon-font-path: '../fonts/';
           #telefone{
             background: url(../images/telefone.png) center left no-repeat;
             background-size: auto 95%;
-          padding-left: 32px;
+            padding-left: 32px;
           }
           #email{
             background: url(../images/email.png) center left no-repeat;

@@ -1,281 +1,338 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Connect Front</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connect Front</title>
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div class="container-fluid">
-      <header id="menu-header">
-        <nav id="menu" class="container-fluid">
-          <div id="logo">
-            <a href="/"><img class="img-responsive" src="/images/logo.png" alt=""></a>
-          </div>
-          <div class="navegacao">
-            <ul id="nav-principal">
-              <!-- {% for page in site.pages %}
+
+  <div class="container-fluid">
+    <header id="menu-header">
+      <nav id="menu" class="container-fluid">
+        <div id="logo">
+          <a href="/">
+            <img class="img-responsive" src="/images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="navegacao">
+          <ul id="nav-principal">
+            <!-- {% for page in site.pages %}
                 <li class="menu-item"><a href="{{ page.url }}">{{page.title}}</a></li>
               {% endfor%} -->
-              <li class="menu-item"><a href="/">O Grupo Connect</a></li>
-              <li class="menu-item"><a href="/institucional">Agenda</a></li>
-              <li class="menu-item"><a href="{{ site.matricula-url }}" target="_blank">Nosso Negócio</a></li>
-              <li class="menu-item"><a href="/atendimento">Una-se</a></li>
-              <li class="menu-item"><a href="/blog">Contato</a></li>
-              <li class="icon-menu"><a href="javascript:void(0);" onclick="abreMenu()">&#9776;</a></li>
-            </ul>
-          </div>
-          <div id="">
-            <a href="/"><img class="img-responsive" src="/images/callcenter.png" alt=""></a>
-          </div>
-      
-        </nav>
-      </header>
+            <li class="menu-item">
+              <a href="/">O Grupo Connect</a>
+            </li>
+            <li class="menu-item">
+              <a href="/institucional">Agenda</a>
+            </li>
+            <li class="menu-item">
+              <a href="{{ site.matricula-url }}" target="_blank">Nosso Negócio</a>
+            </li>
+            <li class="menu-item">
+              <a href="/atendimento">Una-se</a>
+            </li>
+            <li class="menu-item">
+              <a href="/blog">Contato</a>
+            </li>
+            <li class="icon-menu">
+              <a href="javascript:void(0);" onclick="abreMenu()">&#9776;</a>
+            </li>
+          </ul>
+        </div>
+        <div id="">
+          <a href="/">
+            <img class="img-responsive" src="/images/callcenter.png" alt="">
+          </a>
+        </div>
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="/images/galeria1.png" alt="Chania">
-            <div class="carousel-caption">
-              <h3>A alegria que contrói nosso futuro</h3>
-            </div>
-          </div>
-      
-          <div class="item">
-            <img src="/images/galeria2.png" alt="Chicago">
-            <div class="carousel-caption">
-              <h3>A alegria que contrói nosso futuro</h3>
-            </div>
-          </div>
-      
-          <div class="item">
-            <img src="/images/galeria3.png" alt="New York">
-            <div class="carousel-caption">
-              <h3>A alegria que contrói nosso futuro</h3>
-            </div>
+      </nav>
+    </header>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/images/galeria1.png" alt="Chania">
+          <div class="carousel-caption">
+            <h3>A alegria que contrói nosso futuro</h3>
           </div>
         </div>
-      
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+        <div class="item">
+          <img src="/images/galeria2.png" alt="Chicago">
+          <div class="carousel-caption">
+            <h3>A alegria que contrói nosso futuro</h3>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="/images/galeria3.png" alt="New York">
+          <div class="carousel-caption">
+            <h3>A alegria que contrói nosso futuro</h3>
+          </div>
+        </div>
       </div>
 
-
-      <section class="row" id="sec-1">
-        <div id="cont" class="col-md-6">
-          <h2>O GRUPO CONNECT</h2>
-          <p>O GRUPO CONNECT é uma empresa que encontra na inovação a oportunidade de construir, propagar e animar o 
-            espírito e a imaginação para dias melhores de sua família e de todas as pessoas que verdadeiramente se 
-            conectam com ela.</p>
-
-          <p>Criada em 2017, viemos para impactar a vida de inúmeras pessoas a desenvolverem seu legado, 
-            sua riqueza e sucesso. A essência da nossa corporação é acreditar na auto expressão como ferramenta 
-            para a concretização das conquistas. O melhor diferencial que transmitimos é nosso propósito de potencializar 
-            a felicidade em sociedade. Acreditamos na união das pessoa e no poder disso.</p>
-            
-          <p>Trabalhamos com a união da venda direta com o marketing multinível, uma combinação de crescimento exponencial. 
-            Todos os nossos negócios são juridicamente amparados e assessorados.</p>
-        </div>
-        <div id="bg" class="col-md-6"></div>
-      </section>
-
-      <section id="sec-2" class="row">
-        <h2>Agenda</h2>
-
-        <div class="col-md-4 cartao-container">
-          <div class="cartao">
-            <div class="cartao-heading">
-              <p id="dia">20</p>
-              <p id="mes">Abril</p>
-            </div>
-            <div class="cartao-body">
-              <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4 cartao-container">
-            <div class="cartao">
-              <div class="cartao-heading">
-                <p id="dia">20</p>
-                <p id="mes">Abril</p>
-              </div>
-              <div class="cartao-body">
-                <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 cartao-container">
-              <div class="cartao">
-                <div class="cartao-heading">
-                  <p id="dia">20</p>
-                  <p id="mes">Abril</p>
-                </div>
-                <div class="cartao-body">
-                  <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 cartao-container">
-                <div class="cartao">
-                  <div class="cartao-heading">
-                    <p id="dia">20</p>
-                    <p id="mes">Abril</p>
-                  </div>
-                  <div class="cartao-body">
-                    <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
-                  </div>
-                </div>
-              </div>
-
-      </section>
-      
-      <section id="sec-3">
-        <div id="esquerda" class="col-md-5">aqui</div>
-        <div id="direita" class="col-md-7">aqui</div>
-      </section>
-      <section id="sec-4">
-        <div class="cont">
-          <h3>Una-se</h3>
-          <div id="degrade">
-            <p>Quer saber mais?</p>
-            <p>Deixe-nos saber e te contatamos.</p>
-          </div>
-          <div id="form-wrapper">
-            <form action="">
-              <div class="form-group col-md-12">
-                <label for="email">Nome:</label>
-                <input type="email" class="form-control" id="nome" placeholder="Enter email" name="email">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="pwd">Email:</label>
-                <input type="password" class="form-control" id="email" placeholder="Enter password" name="pwd">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="pwd">Telefone:</label>
-                <input type="password" class="form-control" id="telefone" placeholder="Enter password" name="pwd">
-              </div>
-              <div class="form-group col-md-12">
-                  <label for="comment">Comment:</label>
-                  <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-              
-              <button type="submit" class="btn btn-default ">Submit</button>
-            </form>
-            </div>
-            
-        </div>
-      </section>
-      <section id="sec-5">
-        <div class="cont row">
-          <h3>Contato</h3>
-          <div id="esquerda" class="col-md-5">
-            <div class="enderecos">
-              <p>Rua do Livramento, 90 - Centro</p>
-              <p>Maceió, Alagoas - CEP: 57020-030</p>
-            </div>
-            <div class="contatos">
-              <p id="telefone">82 3027-1025</p>
-              <p id="email">contato@grupoconnect.com.br</p>
-              <p id="site">www.grupoconnect.com.br</p>
-            </div>
-            
-          </div>
-          <div id="direita" class="col-md-7">
-            <div id="mapa"></div>
-          </div>
-        </div>
-          
-      </section>
-      
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-    <script>
-        function myMap() {
-          var myCenter = new google.maps.LatLng(51.508742,-0.120850);
-          var mapCanvas = document.getElementById("mapa");
-          var mapOptions = {center: myCenter, zoom: 5};
-          var map = new google.maps.Map(mapCanvas, mapOptions);
-          var marker = new google.maps.Marker({position:myCenter});
-          marker.setMap(map);
-        }
-        </script>
-        
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVBWNSCCnINEXymRKehXwkkAcgwExT88&callback=myMap"></script>
-        <!--
+
+    <section class="row" id="sec-1">
+      <div id="cont" class="col-md-6">
+        <h2>O GRUPO CONNECT</h2>
+        <p>O GRUPO CONNECT é uma empresa que encontra na inovação a oportunidade de construir, propagar e animar o espírito
+          e a imaginação para dias melhores de sua família e de todas as pessoas que verdadeiramente se conectam com ela.</p>
+
+        <p>Criada em 2017, viemos para impactar a vida de inúmeras pessoas a desenvolverem seu legado, sua riqueza e sucesso.
+          A essência da nossa corporação é acreditar na auto expressão como ferramenta para a concretização das conquistas.
+          O melhor diferencial que transmitimos é nosso propósito de potencializar a felicidade em sociedade. Acreditamos
+          na união das pessoa e no poder disso.</p>
+
+        <p>Trabalhamos com a união da venda direta com o marketing multinível, uma combinação de crescimento exponencial. Todos
+          os nossos negócios são juridicamente amparados e assessorados.</p>
+      </div>
+      <div id="bg" class="col-md-6"></div>
+    </section>
+
+    <section id="sec-2" class="row">
+      <h2>Agenda</h2>
+
+      <div class="col-md-4 cartao-container">
+        <div class="cartao">
+          <div class="cartao-heading">
+            <p id="dia">20</p>
+            <p id="mes">Abril</p>
+          </div>
+          <div class="cartao-body">
+            <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 cartao-container">
+        <div class="cartao">
+          <div class="cartao-heading">
+            <p id="dia">20</p>
+            <p id="mes">Abril</p>
+          </div>
+          <div class="cartao-body">
+            <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 cartao-container">
+        <div class="cartao">
+          <div class="cartao-heading">
+            <p id="dia">20</p>
+            <p id="mes">Abril</p>
+          </div>
+          <div class="cartao-body">
+            <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 cartao-container">
+        <div class="cartao">
+          <div class="cartao-heading">
+            <p id="dia">20</p>
+            <p id="mes">Abril</p>
+          </div>
+          <div class="cartao-body">
+            <p>MACEIÓ, ALAGOAS, HOTEL PONTA VERDE 20H30</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="sec-3" class="row">
+      <div id="esquerda" class="col-md-5">
+        <h2>Nosso negócio</h2>
+        <div id="negocio-desc">
+          <p>A transformação digital mundial e nacional será já nos próximos anos a base do lastro industrial por onde passará
+            o crescimento econômico. A tendência é que tudo esteja conectado à tecnologia e às pessoas, e é precisamente
+            esse nosso binômio: vida e tecnologia. Apesar do potencial gigantesco, o mercado de tecnologia ainda é um mercado
+            pouco explorado pela Venda Direta e pelo Marketing Multinível. A modalidade movimentou em 2016 R$ 45,7 bilhões,
+            4,3 milhões de revendedores, e é assim que trabalhamos.
+          </p>
+        </div>
+        <div id="baixe">Baixe nosso descritivo em pdf</div>
+      </div>
+
+      <div id="direita" class="col-md-7">
+        <h3>Três áreas de atuação</h3>
+        <div class="area-atuacao">
+          <p class="area-titulo">> MOBILE</p>
+          <p class="area-desc">Segundo a 28º Pesquisa Anual do Uso de TI nas empresas da FGV, ao final de 2018 o Brasil deverá atingir a marca
+            de 1 smartphone por brasileiro – chegando a 208 milhões de smartphones em uso. Hoje, segundo o IBGE, o país tem
+            198 milhões de celulares. Ou seja, o mercado de gadgets e acessórios só cresce e continuará assim.
+          </p>
+        </div>
+        <div class="area-atuacao">
+          <p class="area-titulo">> INFORMÁTICA</p>
+          <p class="area-desc">O País tem 133 milhões de computadores e 33 milhões de tablets – na pesquisa da FGV, somando ao todo 166 milhões
+            de dispositivos.
+          </p>
+        </div>
+        <div class="area-atuacao">
+          <p class="area-titulo">> AUDIO & VIDEO</p>
+          <p class="area-desc">De acordo com o estudo da FGV, há hoje 228 milhões de televisões em uso no Brasil, mais de um aparelho por habitante.
+            Além disso, o brasileiro tem incorporado cada vez mais a aquisição de produtos de áudio - como caixas de som
+            portáteis e fones de ouvido, por exemplo, aos seus hábitos de consumo.
+          </p>
+        </div>
+        <p>
+          São números que revelam o potencial do mercado a ser explorado.
+        </p>
+      </div>
+    </section>
+
+  <section id="sec-4">
+    <div class="cont">
+      <h3>Una-se</h3>
+      <div id="degrade">
+        <p>Quer saber mais?</p>
+        <p>Deixe-nos saber e te contatamos.</p>
+      </div>
+      <div id="form-wrapper">
+        <form action="">
+          <div class="form-group col-md-12">
+            <label for="email">Nome:</label>
+            <input type="email" class="form-control" id="nome" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="pwd">Email:</label>
+            <input type="password" class="form-control" id="email" placeholder="Enter password" name="pwd">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="pwd">Telefone:</label>
+            <input type="password" class="form-control" id="telefone" placeholder="Enter password" name="pwd">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="comment">Comment:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-default ">Submit</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <section id="sec-5">
+    <div class="cont row">
+      <h3>Contato</h3>
+      <div id="esquerda" class="col-md-5">
+        <div class="enderecos">
+          <p>Rua do Livramento, 90 - Centro</p>
+          <p>Maceió, Alagoas - CEP: 57020-030</p>
+        </div>
+        <div class="contatos">
+          <p id="telefone">82 3027-1025</p>
+          <p id="email">contato@grupoconnect.com.br</p>
+          <p id="site">www.grupoconnect.com.br</p>
+        </div>
+
+      </div>
+      <div id="direita" class="col-md-7">
+        <div id="mapa"></div>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function (b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+        function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+      e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+  </script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+  <script>
+    function myMap() {
+      var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+      var mapCanvas = document.getElementById("mapa");
+      var mapOptions = { center: myCenter, zoom: 5 };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({ position: myCenter });
+      marker.setMap(map);
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVBWNSCCnINEXymRKehXwkkAcgwExT88&callback=myMap"></script>
+  <!--
       
   </body>
 </html>
