@@ -257,6 +257,15 @@ $icon-font-path: '../fonts/';
         background-size: auto 100%;
         padding-left: 50px;
         margin: 30px 0 0 25px;
+        a{
+          color: white;
+          &:link {
+            text-decoration: none;
+          }
+          &:hover{
+            opacity: 0.8;
+          }
+        }
         
       }
     }
@@ -264,6 +273,12 @@ $icon-font-path: '../fonts/';
       min-height: inherit;
       padding: 45px 180px 45px 50px;
       background-color: #004c8e;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#004f8f+0,00448b+31,00438a+100 */
+      background: -moz-linear-gradient(left, #004f8f 0%, #00448b 31%, #00438a 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #004f8f 0%,#00448b 31%,#00438a 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #004f8f 0%,#00448b 31%,#00438a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004f8f', endColorstr='#00438a',GradientType=1 ); /* IE6-9 */
+      
       p{
         letter-spacing: 1px;
       }
