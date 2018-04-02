@@ -30,7 +30,30 @@
     <![endif]-->
 
   <div class="container-fluid">
-    <!-- <header id="menu-header">
+    <div class="overlay">
+        <ul id="nav-mobile">
+            <li class="menu-item">
+              <a class="scrollTo" href="#sec-1">O Grupo Connect</a>
+            </li>
+            <li class="menu-item ">
+              <a class="scrollTo" href="#sec-2">Agenda</a>
+            </li>
+            <li class="menu-item">
+              <a class="scrollTo" href="#sec-3">Nosso Negócio</a>
+            </li>
+            <li class="menu-item">
+              <a class="scrollTo" href="#sec-4">Una-se</a>
+            </li>
+            <li class="menu-item">
+              <a class="scrollTo" href="#sec-5">Contato</a>
+            </li>
+            <li class="icon-menu">
+              <li id="menu-icon" class="icon-menu"><a href="javascript:void(0);" onclick="abreMenu()">&#x2715;</a></li>
+            </li>
+          </ul>
+    </div>
+
+    <header id="menu-header">
       <nav id="menu" class="container-fluid">
         <div id="logo">
           <a class="scrollTo" href="#myCarousel">
@@ -55,7 +78,7 @@
               <a class="scrollTo" href="#sec-5">Contato</a>
             </li>
             <li class="icon-menu">
-              <a class="scrollTo" href="javascript:void(0);" onclick="abreMenu()">&#9776;</a>
+              <a class="" href="javascript:void(0);" onclick="abreMenu()">&#9776;</a>
             </li>
           </ul>
         </div>
@@ -66,7 +89,7 @@
         </div>
 
       </nav>
-    </header> -->
+    </header>
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -330,7 +353,12 @@
   </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwVBWNSCCnINEXymRKehXwkkAcgwExT88&callback=myMap"></script>
-  <!--
+
+  <script>
+    function abreMenu(){
+        $(".overlay").toggleClass("open");
+    }
+  </script>
       
   </body>
 </html>

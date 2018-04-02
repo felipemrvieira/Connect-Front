@@ -19,8 +19,15 @@ $(document).ready(function () {
             scrollTop: ($(target).offset().top - 170)
         }, 500);
     }
+    $(".overlay").removeClass("open");
 
-});
+    });
+
+    function abreMenu(){
+        $(".overlay").toggleClass("open");
+        alert("teste");
+    }
+
 });
 
 

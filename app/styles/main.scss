@@ -222,6 +222,9 @@ $icon-font-path: '../fonts/';
           border-radius: 0;
           padding: 16px;
           border: 1px solid transparent;
+          @media screen and (max-width: 765px) {
+            border: 1px solid #00428a;
+          }
           -moz-border-image: -moz-linear-gradient(top, #00f0d5 0%, #00428a 100%);
           -webkit-border-image: -webkit-linear-gradient(top, #00f0d5 0%, #00428a 100%);
           border-image: linear-gradient(to bottom, #00f0d5 0%, #00428a 100%);
@@ -291,7 +294,10 @@ $icon-font-path: '../fonts/';
       }
       
       #baixe{
-        font-size: 24px;
+        font-size: 1.6em;
+        // @media screen and (max-width: 1200px) {
+        //   padding: 0;
+        // }
         text-transform: uppercase;
         font-family: 'Aquawax-Black';
         background: url(../images/baixe.png) center left no-repeat;
