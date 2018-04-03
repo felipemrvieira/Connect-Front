@@ -171,15 +171,17 @@ $icon-font-path: '../fonts/';
   }
 
   #sec-2{
-    min-height: 50vh;  
-    // background-image: url(../images/agendabg.png);
-    // background-repeat: no-repeat;
-    // background-size: 100%;
+    min-height: 90vh;  
+    background-image: url(../images/agendabg.png);
+    background-repeat: no-repeat;
+    background-size: 120%;
     @media screen and (max-width: 765px) {
       background-size: cover;
     }
 
     background-position: top left;
+
+
     @include padding-geral;
 
     h2{

@@ -28,6 +28,29 @@ $(document).ready(function () {
         alert("teste");
     }
 
+
+    window.sr = ScrollReveal({ reset: true });
+    sr.reveal('.cartao-container',{ duration: 1000 });
+    sr.reveal('#degrade',{ duration: 800 });
+    sr.reveal('#menu-header',{ duration: 800 });
+
+    function parallax() {
+        var $slider = document.getElementById("sec-2");
+    
+        var yPos = window.pageYOffset / $slider.dataset.speed;
+        yPos = -yPos;
+        
+        var coords = '0% '+ yPos + 'px';
+        
+        $slider.style.backgroundPosition = coords;
+    }
+    
+    window.addEventListener("scroll", function(){
+        parallax();	
+    });
+    
+    
+    
 });
 
 
