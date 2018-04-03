@@ -189,12 +189,36 @@ $icon-font-path: '../fonts/';
     }
     .cartao-container{
       margin-bottom: 24px;
-      padding: 0 24px 0 0; 
+      padding: 0 24px 0 0;
+      a{
+        text-decoration: none;
+      }
       .cartao{
         border-radius: 0;
+        
+        &:hover{
+          cursor: pointer;
+          .cartao-heading{
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00f0d5+0,0087a8+41,00428a+100 */
+          background: #00f0d5; /* Old browsers */
+          background: -moz-linear-gradient(45deg,  #00428a 0%, #0087a8 41%,  #00f0d5 100%); /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg,#00428a 0%,  #0087a8 41%, #00f0d5 100%); /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg,#00428a 0%,  #0087a8 41%, #00f0d5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0d5', endColorstr='#00428a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          
+          }
+          .cartao-body{
+            background-color: white;
+            p{
+              // font-family: 'Quark-Bold';
+
+            }
+          }
+        }
         .cartao-heading{
           border-radius: 0;
           text-align: center;
+          cursor: pointer;
           text-transform: uppercase;
           font-family: 'Quark-Light';
           color: white;
@@ -206,21 +230,27 @@ $icon-font-path: '../fonts/';
           background: -webkit-linear-gradient(45deg, #00f0d5 0%,#0087a8 41%,#00428a 100%); /* Chrome10-25,Safari5.1-6 */
           background: linear-gradient(45deg, #00f0d5 0%,#0087a8 41%,#00428a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0d5', endColorstr='#00428a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+
           #dia{
             font-family: 'Quark-Light';
             font-weight: 900;
             font-size: 58px;
             line-height: 100%;
             margin: 0;
+            cursor: pointer;
           }
           #mes{
             font-size: 12px;
             line-height: 100%;
             margin: 0;
             letter-spacing: 5px;
+            cursor: pointer;
           }
         }
         .cartao-body{
+          cursor: pointer;
           border-radius: 0;
           padding: 16px;
           border: 1px solid transparent;
@@ -231,6 +261,12 @@ $icon-font-path: '../fonts/';
           -webkit-border-image: -webkit-linear-gradient(top, #00f0d5 0%, #00428a 100%);
           border-image: linear-gradient(to bottom, #00f0d5 0%, #00428a 100%);
           border-image-slice: 1;
+
+    
+          &:hover{
+            
+            cursor: pointer;
+          }
           p{
             font-family: 'Quark-Light';
             font-size: 14px;
