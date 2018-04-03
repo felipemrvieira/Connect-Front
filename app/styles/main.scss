@@ -172,9 +172,9 @@ $icon-font-path: '../fonts/';
 
   #sec-2{
     min-height: 50vh;  
-    background-image: url(../images/agendabg.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+    // background-image: url(../images/agendabg.png);
+    // background-repeat: no-repeat;
+    // background-size: 100%;
     @media screen and (max-width: 765px) {
       background-size: cover;
     }
